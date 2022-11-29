@@ -10,7 +10,7 @@ import mongoose from 'mongoose'
 const app = express()
 app.use(cors())
 app.use(express.json());
-const CONNECTION_STRING = 'mongodb+srv://AadeshMallya:gremlin27@cluster0.iqh7ibu.mongodb.net/tuiter?retryWrites=true&w=majority'
+const CONNECTION_STRING = 'mongodb+srv://AadeshMallya:gremlin27@cluster0.iqh7ibu.mongodb.net/?retryWrites=true&w=majority'
     || 'mongodb://localhost:27017/tuiter'
 mongoose.connect(CONNECTION_STRING);
 TuitsController(app);

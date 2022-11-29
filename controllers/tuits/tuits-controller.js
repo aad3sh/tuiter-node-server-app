@@ -20,7 +20,7 @@ const templateTuit = {
 
 const createTuit = async(req, res) => {
     const newTuit = req.body;
-    // newTuit._id = parseInt((new Date()).getTime()+'');
+    newTuit._id = parseInt((new Date()).getTime()+'');
     newTuit.userName = "NASA";
     newTuit.handleName = "nasa";
     newTuit.image = "nasa.jpg";
